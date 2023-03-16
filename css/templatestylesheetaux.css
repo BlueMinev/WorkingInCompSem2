@@ -1,0 +1,68 @@
+body {
+    background-image: url("../images/circle-g80746a6f3_1920.jpg");
+    background-repeat: round;
+    background-attachment: fixed;
+} 
+
+.horizontalnav  {
+    text-align: center;
+}
+
+.content-container  {
+    background-color: rgba(11, 61, 112, .5) ;
+    filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));
+}
+
+.fixed {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+.cardcontainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forceheight {
+    height: 320px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgba(11, 61, 112, 1) ;
+    color: #000;
+    text-align: center;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: purple;
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.flipCard {
+    transform: rotateY(180deg);
+}
+    
