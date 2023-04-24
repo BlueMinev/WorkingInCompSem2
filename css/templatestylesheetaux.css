@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/circle-g80746a6f3_1920.jpg");
+
     background-repeat: round;
     background-attachment: fixed;
 } 
@@ -10,7 +10,8 @@ body {
 
 .content-container  {
     background-color: rgba(11, 61, 112, .5) ;
-    filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));
+    border-style: hidden;
+    border-radius: 5px;
 }
 
 .fixed {
