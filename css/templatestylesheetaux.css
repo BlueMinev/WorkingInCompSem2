@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/circle-g80746a6f3_1920.jpg");
-    background-repeat: round;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 } 
 
@@ -20,34 +20,57 @@ body {
     z-index: 999;
 }
 
-.cardcontainer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .forceheight {
     height: 320px;
 }
 
-.card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease;
+/*
+FLIP QUIZ CARDS----------------------------------------
+*/
+
+.container {
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
 }
+
+.card {
+
+    height: 300px;
+    width: 200px;
+    position: relative;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 20px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 3px lightblue;
+    
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
 
 .front {
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 20px;
+    background-color: rgba(11, 61, 112, 1);
     backface-visibility: hidden;
-    background-color: rgba(11, 61, 112, 1) ;
+    border-radius: 3px;
     color: #000;
     text-align: center;
 }
@@ -56,13 +79,15 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 20px;
     backface-visibility: hidden;
     background: purple;
     color: white;
     text-align: center;
+    border-radius: 3px;
     transform: rotateY(180deg);
 }
-.flipCard {
-    transform: rotateY(180deg);
-}
-    
+
+/*
+FLIP QUIZ CARDS---------------------------------------
+*/
