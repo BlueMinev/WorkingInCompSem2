@@ -1,0 +1,44 @@
+:root {
+    --mbg: #8E9EB8;
+    --accent-color: #822485;
+    --green: 99, 40%, 58%;
+    --yellow: 42, 88%, 64%;
+    --orange: 30, 82%, 59%;
+    --red: 3, 61%, 58%;
+    --purple: 293, 29%, 50%;
+    --blue: 202, 68%, 60%;
+    --dark: 0, 0%, 18%;
+    --light: 0, 0%, 95%;
+}
+
+.accordion {
+    background-color: var(--mbg);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: var(--mbg);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.66s ease-out;
+}
+
+.accordion:after {
+    content: url("../images/accopen.png");
+    font-size: 16px;
+    color: #777;
+    float: left;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: url("../images/accClose.png");
+  }

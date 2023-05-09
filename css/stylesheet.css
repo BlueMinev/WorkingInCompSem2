@@ -1,0 +1,398 @@
+/*
+Base styling <---------------------------------------> 
+*/
+*{box-sizing: border-box;}
+body {
+    background-color: #F0F0F0;
+    font-family: Kanit, Georgia, Times, serif;
+    color: #333;
+    font-size: 100%; /* Equivalent to 1em/16px*/
+    line-height: 1.2em;
+}
+#wrapper {
+    max-width: 100em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFF;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+     "banner"
+     "menu"
+     "main"
+     "footer";
+}
+#main-text {
+    max-width: 100em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFF;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/*article	{
+}
+*/
+
+/*
+Headings <--------------------------------------->
+*/
+h1,h2,h3,h4,h5,h6{
+    font-family: Kanit, Georgia, Times, serif;
+    line-height: 1;
+}
+h1	{
+    color: rgb(0, 0, 0); /* 36px */
+    font-size: 2.25em;
+}
+h2	{
+    color: rgb(0, 0, 0); /* 28px */
+    font-size: 1.75em;
+}
+h3 	{
+    color: rgb(0, 0, 0); /* 22px */
+    font-size: 1.375em;
+}
+h4  {
+    color: rgb(0, 0, 0); /* 18px */
+    font-size: 1.125em;
+}
+h5  {
+    color: rgb(0, 0, 0); /* 16px */
+    font-size: 1em;
+}
+h6  {
+    color: rgb(0, 0, 0); /* 14px */
+    font-size: .875em;
+}
+/*
+Grouping <--------------------------------------->
+*/
+p	{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.25rem;
+    line-height: 1.5;
+    margin: 10px 0 10px 0;
+}
+blockquote	{
+    padding: 1em 2em 1em 2em;
+	margin: 0 0 2em 0;
+	border-left: 5px solid #eee;
+}
+table   {
+    margin-right: 3em;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	max-width: 35em;
+}
+tbody tr:nth-child(odd) {
+	background-color: rgba(204, 0, 0, .1);
+}
+
+th, td
+{
+	font-size: 90%;
+	padding: .2em 1em .2em 1em;
+	border: 1px solid #ddd;
+	vertical-align: top;
+	text-align: left;
+	white-space: nowrap;
+}
+
+td:empty {
+    background-color: #F00;
+}
+
+/*
+lists <--------------------------------------->
+*/
+ul	{
+    list-style-type: disc;
+	line-height: 16px;
+}
+li	{
+    margin-left: 20px;
+	line-height: 20px;
+}
+ol	{
+    list-style-type: decimal;
+	line-height: 16px;
+}
+dl	{
+    line-height: 20px;
+}
+dt	{
+    font-weight: bolder;
+}
+dd	{
+    text-indent: 10px;
+}
+/*
+Grid Layout <--------------------------------------->
+*/
+main  {
+    grid-area: main;
+}
+aside	{
+    grid-area: aside;
+    margin: 1em 0 1em 1em;
+}
+footer {
+    grid-area: footer;
+}
+nav	{
+    grid-area: nav;
+}
+.menu	{
+	grid-area: menu;
+    background-color: #000000;
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+.banner {
+	grid-area: banner;
+    padding: 0 0 0 3em;
+    color: #000000;
+    background-color: rgb(0, 0, 0);
+}
+table {
+    grid-area: table;
+}
+/*
+Text <--------------------------------------->
+*/
+em	{
+    font-style: italic;
+}
+strong	{
+    font-weight: bold;
+}
+small	{
+    font-size: smaller;
+}
+cite	{
+    font-style: italic;
+}
+time	{
+    font-family: Orbitron, Kanit Georgia, Times, serif;
+}
+/*
+Image <--------------------------------------->
+*/
+/*figure	{
+}
+figcaption	{
+}
+*/
+img	{
+    margin: 2px;
+	border: 1px solid #CCC;
+    max-width: 100%;
+}
+input {
+    display: block;
+}
+label {
+    display: block;
+}
+
+/*
+Anchors <--------------------------------------->
+*/
+a:link	{
+    color: #0090D2;
+}
+a:visited {
+    color: #0090D2;
+}
+a:hover {
+    color: #0063A6;
+    text-decoration: none;
+}
+a:active {
+    color: #0090D2;
+}
+
+/*
+Classes <--------------------------------------->
+*/
+.banner h1, h2 {
+    color: #CCC;
+}
+.media	{
+    margin: 0;
+    padding: 0;
+}
+  .media li	{
+    margin: 0;
+    padding: 0;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.menu li	{
+    display: block;
+    list-style-type: none;
+    font-size: 1.25rem;
+    /*
+    margin-left: 0px;
+    margin-bottom: 20px;
+    */
+    margin: 0;
+}
+.menu a {
+    display: block;
+    color: #CCC;
+    padding: .7em 1.25em .7em 1.25em;
+    margin-right: 4px;
+    text-decoration: none;
+    border: 2px solid #0090D2;
+    border-radius: 3px;
+}
+.menu a:hover {
+    background-color: #0090D2;
+    color: #CCC;
+}
+.menu a:link {
+    color: #CCC;
+}
+.menu a:visited {
+    color: rgb(89, 65, 137);
+}
+.menu a:focus {
+    color: #C00;
+}
+.menu a:active {
+    color: #C00;
+}
+.post	{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #CCC;
+}
+p.dropcap:first-letter	{
+    float: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color:#F00;
+    font-size: 5em;
+    line-height: 0.2;
+    margin: 8px 5px 0 0;
+  }
+.published {
+    font-family: Orbitron, Kanit Georgia, Times, serif;
+    color:rgb(99, 62, 62);
+}
+/*
+float/clear classes <--------------------------------------->
+*/
+
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlt { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clear { /* this class can be placed on an element or empty div as the final element following the last floated div */
+	clear: both;
+}
+        /*
+        Menu navigation - inline layout for wider screens <--------------------------------------->
+        */	
+         .menu { padding: 1em 0 1em 3em; }
+         .menu li
+         {
+          display: inline;
+          margin: 0 1em 0 0;
+         }
+         .menu a
+         {
+          display: inline;
+          padding: 0;
+          border-bottom: 0;
+         }
+
+@media screen and (min-width: 50em) {
+	.banner { padding: 1em 1.25em 10em 1.25em; }
+	.menu { padding: 1em 3em 1em 3em; }
+	footer { padding: 2em 3em 2em 3em; }
+
+	.menu li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}
+	.menu a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}	
+	aside {
+		float: right;
+		width: 25%;
+	}
+	.video-wrapper {
+		float: left;
+		width: 65%;
+	}
+}
+  @media (min-width: 60em) {
+    #wrapper {
+      grid-template-columns: 3fr 5fr 3fr;
+      grid-template-areas: 
+        "banner  banner  banner"
+        "menu  menu  menu"
+        "nav  table  aside"
+        "nav  main  aside"
+        "footer  footer  footer";
+     }
+}
+
+  
+  /*640 px - tablet portrait orientation - 2 columns
+  @media (min-width: 40em){
+    .card { width: 50%; }
+  }
+  960 px* - tablet landscape orientation and above - 3 columns
+  @media (min-width: 60em) {
+    .card { width: 33.33%; }
+  }
+*/
+/*
+Cull timetable on smaller displays <--------------------------------------->
+*/
+@media (max-width: 500px) {
+	table {
+		display:none;
+   }
+}
+/*
+Video containers and iframe <--------------------------------------->
+*/
+.video-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  iframe	{
+    width: 100%;
+    height: auto;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9 */
+    height: 0; 
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+  }

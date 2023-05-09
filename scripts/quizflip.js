@@ -7,7 +7,6 @@ function flipCard() {
     card.classList.toggle("flipCard")
 }
 */
-/*
 const cards = document.querySelectorAll(".card");
 
 for (let i = 0; i < cards.length; i++) {
@@ -18,4 +17,3 @@ for (let i = 0; i < cards.length; i++) {
 function flipCard() {
     this.classList.toggle("flipCard");
 }
-*/
