@@ -2,12 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>template</title>
+        <title>BVJN - Security Mechanisms</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/normalize.css" rel="stylesheet">
-		<link href="css/templatestylesheetaux.css" rel="stylesheet">
+		<link href="css/customstyles.css" rel="stylesheet">
+        <link href="css/accordion.css" rel="stylesheet">
         <link href="css/bootstrap-grid.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
     </head>
     <body>
             <!-- Navbar -->
@@ -19,137 +25,294 @@
                       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 mx-5 my-2">
         
-                          <li class="nav-item mx-5 my-2">
-                                <a class="nav-link" href="index.html">Page1</a>
-                            </li>
-                          <li class="nav-item mx-5 my-2">
-                            <a class="nav-link" href="page2.html">Page 2</a>
-                          </li>
-                          <li class="nav-item dropdown mx-5 my-2">
-                            <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="index.html">
-                                Current Page
-                              </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:rgb(0, 0, 0)">
-                                <li><a class="dropdown-item" href="#subject1">Jump to Subject1</a></li><!--Use anchors in the page to quickly jump from subject to subject-->
-                                <li><a class="dropdown-item" href="#subject2">Jump to Subject2</a></li>
-                                <li><a class="dropdown-item" href="#subject3">Jump to Subject3</a></li>
-                                <li><a class="dropdown-item" href="#subject4">Jump to Subject4</a></li>
-                                <li><a class="dropdown-item" href="#subject5">Jump to Subject5</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item mx-5 my-2">
-                            <a class="nav-link" href="page4.html">Page 4</a>
-                          </li>
-                          <li class="nav-item mx-5 my-2">
-                            <a class="nav-link" href="quiz.html">Quiz</a>
-                          </li>
+                            <li class="nav-item mx-5 my-2">
+                                <a class="nav-link" href="index.html">Home Page</a>
+                              </li>
+                              <li class="nav-item mx-5 my-2">
+                                <a class="nav-link" href="page2.html">Protecting your Devices</a>
+                              </li>
+                              <li class="nav-item mx-5 my-2">
+                                <a class="nav-link" href="page3.html">Issues around Privacy in Information systems</a>
+                              </li>
+                              <li class="nav-item mx-5 my-2">
+                                <a class="nav-link" href="page4.html">Techniques in Mitigating Privacy Threats</a>
+                              </li>
+                              <li class="nav-item mx-5 my-2">
+                                <a class="nav-link" href="page5.html">Social Media and Social Engineering</a>
+                              </li>
+                              <li class="nav-item mx-5 my-2">
+                                <a class="nav-link" href="glossary.html">Glossary</a>
+                              </li>
                         </ul>
                 </div>
             </header>  
         <main>
+            <a id="top"></a>
             <!--Content begins here-->
-            <div class="container-fluid">
-                <a id="top"></a>
-                <div class="row pt-5 ps-2 ps-lg-3 pe-2 pe-lg-5">
-                    <div class="col pt-2 ps-2 ps-lg-3 pe-2 pb-2">
+            <div id="wrapper" class="container-fluid">
+
+                <!--First row of Divs for introduction to page-->
+                <div id="intro" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                    <div id="intro-aside-l" class="col">
                     </div>
-                    <div class="col-lg-8 content-container pt-2 ps-2 ps-lg-3 pe-2 pb-2">
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
-                        Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents. Some text summarising the page contents.
+                    <div id="intro-content" class="col-lg-8 content-container">
+                        <div id="intro-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
+                        <h1 class="text-center">Heading</h1>
+                        <p>Intro be here.</p>
+                        <p>Take a good read of the following articles and once you have a good grasp of the topics have a go at our Revision Quiz!</p>
+                        </div>
                     </div>
-                    <div class="col pt-2 ps-2 ps-lg-3 pe-2 pb-2 m-sm-1 content-container">
-                        pretty picture
+                    <div id="intro-aside-r" class="col">
                     </div>
                 </div>
-                <div class="row pt-5 ps-2 ps-lg-3 pe-2 pe-lg-5">
-                    <div class="col text-start content-container pt-2 ps-2 pb-2 mx-sm-1">
-                        aside
+
+                <!--Second row of Divs for content viewer-->
+                <div id="content-view" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                    <div id="cv-aside-l" class="col">
                     </div>
-                    <div class="col-8 content-container pt-2 ps-2 ps-lg-3 pe-2 pb-2">
-                        <a id="subject1"></a>
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        <a id="subject2"></a>
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        <a id="subject3"></a>
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        <a id="subject4"></a>
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        Just pretend theres some really interesting content here. Just pretend theres some really interesting content here. Just pretend theres some really interesting content here.
-                        <a id="subject5"></a>
+                    <div id="cv-b1" class="col-lg-8 navigation-container">
+                        <div class="toggle-container">
+                            <label for="theme" class="theme">
+                              <span class="theme--text">Learn</span>
+                              <input type="checkbox" id="theme" onchange="switchview()">
+                              <span class="theme--btn"></span>
+                              <span class="theme--text">Revise</span>
+                            </label>
+                          </div>
                     </div>
-                    <div class="col text-end content-container pt-2 ps-2 pb-2 mx-sm-1">
-                        aside2
+                    <div id="cv-aside-r" class="col">
+                    </div>
+                </div>
+                
+                <!--Third row of Divs for page content-->
+                        
+                    <div id="content" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                        <div class="col">
+                        </div>
+                        <div class="col-lg-8 content-container">
+                            <div id="main-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
+                            <a id="subject1"></a>
+                            <h2 class="tab sh marbot">Page Title</h2>
+                                
+                                <button class="accordion"><h3>Title</h3></button>
+                                <div class="panel">
+                                <p class="tab">Content be here</p> 
+                                </div>
+
+                                <button class="accordion"><h3>Title</h3></button>
+                                <div class="panel">
+                                <p class="tab">Content be here.</p>
+                                </div>
+
+                                <button class="accordion"><h3>Title</h3></button>
+                                <div class="panel">
+                                <p class="tab">Content be here.</p>
+                                </div>
+
+                                <button class="accordion"><h3>Title</h3></button>
+                                <div class="panel">
+                                <p class="tab">Content be here.</p>
+                                </div>
+
+
+
+                            <h2 class="tab sh marbot">Title</h2>
+                            <p class="tab">More Content</p>
+
+                            <a id="subject2"></a>
+
+                            <button class="accordion"><h3>Title</h3></button>
+                            <div class="panel">
+                            <p class="tab">tnetnoc eb ereH</p>
+                            </div>
+                                
+                            <a id="subject3"></a>
+                            
+                            <button class="accordion"><h3>Title</h3></button>
+                            <div class="panel">
+                            <p class="tab">Content be here.</p>
+                            </div>
+
+                            <a id="subject4"></a>
+                            <button class="accordion"><h3>Title</h3></button>
+                            <div class="panel">
+                            <p class="tab">Content be here.</p>
+                            </div>
+                            
+                            <a id="subject4"></a>
+                            <button class="accordion"><h3>Title</h3></button>
+                            <div class="panel">
+                            <p class="tab">Content be here.</p>
+                            </div>
+                            <button class="accordion"><h3>Title</h3></button>
+                            <div class="panel">
+                            <p class="tab">Content be here.</p>
+                            </div>
+                            </div>
+
+                            
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div id="revision-content-container" class="r-c-c row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                    <div id="revision-aside-l" class="col">
+                    </div>
+                    <div id="rcc-1" class="col-lg-4 card-content-container-l">
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rcc-2" class="col-lg-4 card-content-container-r">
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="revision-aside-r" class="col">
+                    </div>
+                </div>
+
+                <div id="revision-content-container" class="row ps-2 ps-lg-3 pe-2 pe-lg-5 r-c-c">
+                    <div id="revision-aside-l" class="col">
+                    </div>
+                    <div id="rcc-3" class="col-lg-4 card-content-container-l">
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rcc-4" class="col-lg-4 card-content-container-r">
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="revision-aside-r" class="col">
+                    </div>
+                </div>
+
+                <div id="revision-content-container" class="row ps-2 ps-lg-3 pe-2 pe-lg-5 r-c-c">
+                    <div id="revision-aside-l" class="col">
+                    </div>
+                    <div id="rcc-5" class="col-lg-4 card-content-container-l">
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rcc-6" class="col-lg-4 card-content-container-r">
+                        <div class="container">
+                            <div class="card">
+                                <div class="front">
+
+                                </div>
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="revision-aside-r" class="col">
+                    </div>
+                </div>
+
+
+            
+                <div id="signature-container" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                    <div class="col">
+                    </div>
+                    <div class="col-lg-8 content-container content-container-bottom">
+                        <div id="signature-content-container" class="pt-3 pb-3 ps-2 ps-lg-3 pe-2 pb-2">
+                            <small>&copy; 2023, Nick Faulkner, Blue Minev, Judy El-Kalza, Vincent Doherty</small>
+                        </div>
+                    </div>
+                    <div class="col">
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="row pt-2 ps-2 pb-2 m-sm-1">
-            <div class="col pt-2 ps-2 ps-lg-3 pe-2 pb-2 m-sm-1 content-container"><small>&copy; 2023, Nick Faulkner, Blue Minev, Judy El-Kalza, Vincent Doherty</small></div>
-            <div class="col-md-auto pt-2 ps-2 ps-lg-3 pe-2 pb-2 m-sm-1 content-container"><a href="#top">Go to top</a></div>
+        <footer>
         </footer>
         <!-- Bootstrap JS CDN - Use either the bundle link (top, commented out) or the two seperate CDN links for popper and bootstrap-->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     </body>
+    <script src="scripts/quizflip.js"></script>
+    <script src="scripts/contentswitch.js"></script>
+    <script src="scripts/accordion.js"></script>
+
 </html>
