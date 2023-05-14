@@ -11,6 +11,51 @@
     --light: 0, 0%, 95%;
 }
 
+/* navbar styling START */
+
+nav {
+  background-color: #000;
+  box-shadow: 0 0 10px #000;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+
+
+.menu li {
+  display: inline-block;
+  padding: 5px 14px;
+  list-style: none;
+  font-size: 18px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+	font-weight: bold;
+}
+
+.menu a {
+  padding: 5px;
+  margin-right: 4px;
+  text-decoration: none;
+  /* border: 2px solid #fff; */
+  background-color: #000;
+  border-radius: 3px;
+  text-transform: uppercase;
+	font-weight: bold;
+  color: #fff;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+
+/* navbar styling END */
+
 
 .horizontalnav  {
     text-align: center;
@@ -22,6 +67,22 @@
     border-color: black;
     background-color: rgba(11, 61, 112, .5) ;
     /*filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));*/
+}
+
+.card-content-container-l  {
+  border-width: 2px;
+  border-style: none none none solid;
+  border-color: black;
+  background-color: rgba(11, 61, 112, .5) ;
+  /*filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));*/
+}
+
+.card-content-container-r  {
+  border-width: 2px;
+  border-style: none solid none none;
+  border-color: black;
+  background-color: rgba(11, 61, 112, .5) ;
+  /*filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));*/
 }
 
 .content-container-top  {
@@ -51,46 +112,6 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.flashcard {
-    width: 300px;
-    height: 200px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .flashcard-front, .flashcard-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .flashcard-front {
-    opacity: 1;
-  }
-  
-  .flashcard-back {
-    opacity: 0;
-    transform: rotateY(180deg);
-  }
-  
-  .flashcard.flipped .flashcard-front {
-    opacity: 0;
-    transform: rotateY(180deg);
-  }
-  
-  .flashcard.flipped .flashcard-back {
-    opacity: 1;
-  }
-  
 
 .tab {
     margin-left: 30px;
@@ -192,3 +213,68 @@ h3:after {
   .theme input:checked ~ .theme--btn::after {
     transform: translate3d(2.5rem, -50%, 0);
   }
+
+  /* Cards */
+
+  .container {
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card {
+
+    height: 300px;
+    width: 200px;
+    position: relative;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 3px lightblue;
+
+    
+}
+
+/*.card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}*/
+
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(11, 61, 112, 1);
+    backface-visibility: hidden;
+    border-radius: 3px;
+    color: #000;
+    text-align: center;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    backface-visibility: hidden;
+    background: purple;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    transform: rotateY(180deg);
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
