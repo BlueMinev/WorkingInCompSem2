@@ -606,6 +606,7 @@ ul.list-inline {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  margin-top: 270px;
 }
 
 @media (min-width: 576px) {
