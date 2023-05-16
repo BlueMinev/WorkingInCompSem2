@@ -24,7 +24,7 @@ nav {
 
 
 .menu li {
-  display: inline-flex;
+  display: inline-block;
   padding: 5px 14px;
   list-style: none;
   font-size: 18px;
@@ -33,7 +33,6 @@ nav {
   color: #ffffff;
   text-transform: uppercase;
 	font-weight: bold;
-  align-items: center;
 }
 
 .menu a {
@@ -52,10 +51,6 @@ nav {
   background-color: #fff;
   color: #000;
   transition: 0.3s ease;
-}
-
-.logo-img {
-  vertical-align: middle;
 }
 
 
