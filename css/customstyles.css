@@ -269,6 +269,10 @@ h3:after {
     text-align: center;
 }
 
+.front h3 {
+  color: #fff;
+}
+
 .back {
     position: absolute;
     width: 100%;
