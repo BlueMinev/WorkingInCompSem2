@@ -24,7 +24,7 @@ nav {
 
 
 .menu li {
-  display: inline-block;
+  display: inline-flex;
   padding: 5px 14px;
   list-style: none;
   font-size: 18px;
@@ -33,6 +33,7 @@ nav {
   color: #ffffff;
   text-transform: uppercase;
 	font-weight: bold;
+  align-items: center;
 }
 
 .menu a {
@@ -51,6 +52,10 @@ nav {
   background-color: #fff;
   color: #000;
   transition: 0.3s ease;
+}
+
+.logo-img {
+  vertical-align: middle;
 }
 
 
@@ -87,10 +92,17 @@ nav {
 
 .content-container-top  {
   border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .content-container-bottom {
+  margin-bottom: 10px;
   border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .navigation-container   {

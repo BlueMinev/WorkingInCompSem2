@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/normalize.css" rel="stylesheet">
 		<link href="css/customstyles.css" rel="stylesheet">
-        <link href="css/accordion.css" rel="stylesheet">
+        <!--<link href="css/accordion.css" rel="stylesheet">-->
         <link href="css/bootstrap-grid.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -38,7 +38,14 @@
             <a id="top"></a>
             <!--Content begins here-->
             <div id="wrapper" class="container-fluid">
-
+                <div id="intro" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                    <div id="intro-aside-l" class="col">
+                    </div>
+                    <div id="intro-content" class="col-lg-8 content-container content-container-top pt-2 ps-2 ps-lg-3 pe-2 pb-2">
+                    </div>
+                    <div id="intro-aside-r" class="col">
+                    </div>
+                </div>
                 <!--First row of Divs for introduction to page-->
                 <div id="intro" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
                     <div id="intro-aside-l" class="col">
@@ -46,7 +53,7 @@
                     <div id="intro-content" class="col-lg-8 content-container">
                         <div id="intro-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
                         <h1 class="text-center">Protecting Your Devices</h1>
-                        <p>In this section we will teach you key strategies to protect information systems. When you hear information system you may think of something like an 
+                        <p>In this section you will learn about some of the key strategies used to protect information systems. When you hear information system you may think of something like an 
                         Organisational Database or large scale file storage servers. This is true but the definition can also apply to personal devices such as Smartphones, 
                         Tablets and Personal Computers.</p>
                         <p>Take a good read of the following articles and once you have a good grasp of the topics have a go at our Revision Quiz!</p>
@@ -83,124 +90,173 @@
                             <div id="main-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
                             <a id="subject1"></a>
                             <h2 class="tab sh marbot">Threats to Information systems</h2>
-                            <p class="tab">Before we go into the ins and outs of security mechanisms it is important to know of the types of threat computer systems are susceptible to:</p>
-                                
-                                <button class="accordion"><h3>Malware</h3></button>
-                                <div class="panel">
-                                <p class="tab">Shorthand for Malicious Software. Malware is a general term used to describe malicious software variants.</p> 
-                                <p class="tab">This includes: Computer Viruses, Spyware and Ransomware.</p>
-                                <p class="tab">Malware is designed and employed by Cyber-attackers in order to cause damage, gain control or spy on a Computer or Network.</p>
+                            <p class="tab">Before we explore security mechanisms it is important to know of the types of threat computer systems are susceptible to:</p>
+                             
+                            <div class="accordion accordion-flush" id="lessonContentAccordion">
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse1" aria-expanded="false" aria-controls="contentCollapse1">
+                                      <h1 class="text-center">Malware</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse1" class="accordion-collapse collapse" aria-labelledby="contentHeading1" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body"><p class="tab">Shorthand for Malicious Software. Malware is a general term used to describe malicious software variants.</p> 
+                                        <p class="tab">This includes: Computer Viruses, Spyware and Ransomware.</p>
+                                        <p class="tab">Malware is designed and employed by Cyber-attackers in order to cause damage, gain control or spy on a Computer or Network.</p></div>
+                                  </div>
                                 </div>
-
-                                <button class="accordion"><h3>SQL Injection</h3></button>
-                                <div class="panel">
-                                <p class="tab">SQLI is an attack vector that uses malicious SQL code to manipulate the back-end systems of a vulnerable website into revealing data that should not be accessible. 
-                                This can include all sorts of information stored in databases such as passwords and other personal information.</p>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse2" aria-expanded="false" aria-controls="contentCollapse2">
+                                      <h1>SQL Injection</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse2" class="accordion-collapse collapse" aria-labelledby="contentHeading2" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body"><p class="tab">SQLI is an attack vector that uses malicious SQL code to manipulate the back-end systems of a vulnerable website into revealing data that should not be accessible.</p> 
+                                        <p class="tab">This can include all sorts of information stored in databases such as passwords and other personal information.</p></div>
+                                  </div>
                                 </div>
-
-                                <button class="accordion"><h3>DDoS Attacks</h3></button>
-                                <div class="panel">
-                                <p class="tab">Stands for Distributed denial of service Attack. DDoS attacks are Cyber-attacks that are carried out by networks of many internet capable machines. 
-                                This includes IoT (Internet of things) devices and is not just limited to generic computers. The network is made up of many machines that have been 
-                                infected with malware and turned into “Zombies”. A DDoS attack works by overwhelming a target with a flood of internet traffic that if unmitigated 
-                                will result in loss of availability of the target and its surrounding infrastructure.</p>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse3" aria-expanded="false" aria-controls="contentCollapse3">
+                                      <h1>DDoS Attacks</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse3" class="accordion-collapse collapse" aria-labelledby="contentHeading3" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body">
+                                        <p class="tab">Stands for Distributed denial of service Attack.</p> 
+                                        <p class="tab">DDoS attacks are Cyber-attacks that are carried out by networks of many internet capable machines. 
+                                        This includes IoT (Internet of things) devices and is not just limited to generic computers. The network is made up of many machines that have been 
+                                        infected with malware and turned into “Zombies”.</p> <p class="tab">A DDoS attack works by overwhelming a target with a flood of internet traffic that if unmitigated 
+                                        will result in loss of availability of the target and its surrounding infrastructure.</p></div>
+                                  </div>
                                 </div>
-
-                                <button class="accordion"><h3>Spam, Phishing, Spoofing & Pharming</h3></button>
-                                <div class="panel">
-                                <p class="tab">These are all techniques used by Cyber-attackers in order to coerce a target into voluntarily surrendering their private details or opening an infected file or link.</p>
-                                
-
-                                <p class="tab">Spam is a very commonplace technique usually sent on mass in the chance that an unscrupulous individual will respond or interact. They usually contain a payload 
-                                of a file or link.</p>
-
-
-                                <p class="tab">Phishing is a technique often used in tandem with Spam. The attacker will often disguise themself by imitating the sender address of a trustworthy organisation. 
-                                The email message is meant to lure the recipient into revealing confidential information such as Passwords, PINs or other sensitive data.</p>
-
-                                <p class="tab">Spoofing is a kind of social-engineering technique where an attacker makes themselves look like a trustworthy individual or organisation relevant to the target 
-                                with the objective of gathering personal or business information.</p>
-
-
-                                <p class="tab">Pharming is a subversive technique used to trick unsuspecting users with a trap website that resembles a legitimate and widely used website. Typically they will 
-                                have fields where users can input sensitive information such as Usernames and Passwords which will later be harvested.</p>
-                                </div>
-
-
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading4">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse4" aria-expanded="false" aria-controls="contentCollapse4">
+                                        <h1>Spam, Phishing, Spoofing & Pharming</h1>
+                                      </button>
+                                    </h1>
+                                    <div id="contentCollapse4" class="accordion-collapse collapse" aria-labelledby="contentHeading4" data-bs-parent="#lessonContentAccordion">
+                                      <div class="accordion-body">
+                                        <p class="tab">These are all techniques used by Cyber-attackers in order to coerce a target into voluntarily surrendering their private details or opening an infected file or link.</p>
+                                        <p class="tab">Spam is a very commonplace technique usually sent on mass in the chance that an unscrupulous individual will respond or interact. They usually contain a payload 
+                                        of a file or link.</p>
+                                        <p class="tab">Phishing is a technique often used in tandem with Spam. The attacker will often disguise themself by imitating the sender address of a trustworthy organisation. 
+                                        The email message is meant to lure the recipient into revealing confidential information such as Passwords, PINs or other sensitive data.</p>
+                                        <p class="tab">Spoofing is a kind of social-engineering technique where an attacker makes themselves look like a trustworthy individual or organisation relevant to the target 
+                                        with the objective of gathering personal or business information.</p>
+                                        <p class="tab">Pharming is a subversive technique used to trick unsuspecting users with a trap website that resembles a legitimate and widely used website. Typically they will 
+                                        have fields where users can input sensitive information such as Usernames and Passwords which will later be harvested.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
 
                             <h2 class="tab sh marbot">Security Mechanisms</h2>
                             <p class="tab">Modern commercial and industrial infrastructure is heavily dependent on information systems, and we use our own personal digital devices every day. Cyberattacks pose an all to real threat to these systems and as such measures must be taken to safeguard them. Some of the most prominent threats have been discussed above, in the following articles we will discuss the measures we can take to protect them.
                             </p>
-
-                            <a id="subject2"></a>
-
-                            <button class="accordion"><h3>Firewalls</h3></button>
-                            <div class="panel">
-                            <p class="tab">
-                                Firewalls come in two main varieties, the most common is a software Firewall. This is an application that can be installed on any sort of computer or mobile device. 
-                                Their operating space resides in between your device and the network you’re connected to. This is an optimal solution for most consumers as they usually come packaged 
-                                within an antivirus suite.</p>
-                            <p class="tab">Hardware firewalls are a bit different, they’re self-contained devices that sit between a network and the internet. The main advantage of using a Hardware 
-                                firewall is that it can monitor and protect an entire network of devices. Using one of these should be a requirement for any sort of business but using one for a home 
-                                network is a great idea if you can stomach the price.</p>
-                            <p class="tab">Both of these types of Firewall fulfill the same basic function; The monitoring and regulation of Internet traffic. Think of them like security guards. They 
-                                monitor the entrances to and from the network, known as Ports, and filter unauthorised individuals, or Traffic. While also letting authorised traffic pass freely.</p>
-                            </div>
                                 
-                            <a id="subject3"></a>
-                            
-                            <button class="accordion"><h3>Intruder Prevention and Detection Systems</h3></button>
-                            <div class="panel">
-                            <p class="tab">Intrusion detection systems or Intrusion prevention systems perform a similar role to Firewalls. Think of them as the second line of defense. In the case that 
-                                an attacker manages to bypass a Firewall an IDS’s role is to analyse the suspicious traffic and subsequently close the connection. After that, details of the breach will 
-                                be logged for later review and dissemination by security personnel in addition to enabling them to take any required action.</p>
-                            <p class="tab">Like Firewalls there are two main forms of IDS: Host IDS and Network IDS. Host IDS (HIDS) works by monitoring system files of devices for signs of intrusion. 
-                                Whereas Network IDS (NIDS) analyses network traffic instead.</p>
-                            <p class="tab">Both forms of IDS are designed to work in tandem and form another core aspect of any serious security strategy both commercially and domestically.</p>
-                            </div>
+                            <!--SECOND ACCORDION BEGINS HERE-->
+                            <div class="accordion accordion-flush" id="lessonContentAccordion2">
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse5" aria-expanded="false" aria-controls="contentCollapse5">
+                                      <h1 class="text-center">Firewalls</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse5" class="accordion-collapse collapse" aria-labelledby="contentHeading5" data-bs-parent="#lessonContentAccordion2">
+                                    <div class="accordion-body"><p class="tab">
+                                        Firewalls come in two main varieties, the most common is a software Firewall. This is an application that can be installed on any sort of computer or mobile device. 
+                                        Their operating space resides in between your device and the network you’re connected to. This is an optimal solution for most consumers as they usually come packaged 
+                                        within an antivirus suite.</p>
+                                    <p class="tab">Hardware firewalls are a bit different, they’re self-contained devices that sit between a network and the internet. The main advantage of using a Hardware 
+                                        firewall is that it can monitor and protect an entire network of devices. Using one of these should be a requirement for any sort of business but using one for a home 
+                                        network is a great idea if you can stomach the price.</p>
+                                    <p class="tab">Both of these types of Firewall fulfill the same basic function; The monitoring and regulation of Internet traffic. Think of them like security guards. They 
+                                        monitor the entrances to and from the network, known as Ports, and filter unauthorised individuals, or Traffic. While also letting authorised traffic pass freely.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse6" aria-expanded="false" aria-controls="contentCollapse6">
+                                      <h1>Intruder Prevention and Detection Systems</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse6" class="accordion-collapse collapse" aria-labelledby="contentHeading6" data-bs-parent="#lessonContentAccordion2">
+                                    <div class="accordion-body"><p class="tab">Intrusion detection systems or Intrusion prevention systems perform a similar role to Firewalls. Think of them as the second line of defense. In the case that 
+                                        an attacker manages to bypass a Firewall an IDS’s role is to analyse the suspicious traffic and subsequently close the connection. After that, details of the breach will 
+                                        be logged for later review and dissemination by security personnel in addition to enabling them to take any required action.</p>
+                                    <p class="tab">Like Firewalls there are two main forms of IDS: Host IDS and Network IDS. Host IDS (HIDS) works by monitoring system files of devices for signs of intrusion. 
+                                        Whereas Network IDS (NIDS) analyses network traffic instead.</p>
+                                    <p class="tab">Both forms of IDS are designed to work in tandem and form another core aspect of any serious security strategy both commercially and domestically.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse7" aria-expanded="false" aria-controls="contentCollapse7">
+                                      <h1>Access Control</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse7" class="accordion-collapse collapse" aria-labelledby="contentHeading7" data-bs-parent="#lessonContentAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="tab">In contrast to the previous examples, access control is more than just a ‘thing.’ There are Hardware and Software applications for access control but it’s more 
+                                            of a strategy than an off the shelf product.</p>
+                                        <p class="tab">Access control covers everything from the front gate of a premises to a password locked zip file. The core principle is that if somebody or something does not 
+                                            need to be somewhere, then don’t allow them to be.</p>
+                                        <p class="tab">Access control can be divided into two demographics: Physical Access control snd Digital Access control.</p>
+                                        <p class="tab">Let's cover digital control first. The most commonly used type of Digital Access Control (DAC) that you will encounter in a professional environment is 
+                                            Role-based Access Control RBAC for short. The core principle of RBAC is that access is delegated on a per-role basis. Sales-people will have access to systems and 
+                                            data relevant to their role and nothing else. Whereas a Human-resources employee would have access to a completely different set of systems and data.</p>
+                                        <p class="tab">There are many different approaches to DAC and different organisations may find alternate setups more favorable, read more about it here: https://dataprot.net/articles/access-control/</p>
+                                        <p class="tab">All Organisations are required by law to comply with the General data-protection Act and considering how data-driven modern business is, a digital Access Control 
+                                            strategy is pretty much a requirement.</p>
+                                        <p class="tab">Physical Access Control is a much broader yet simple premise. It can be as simple as a door with a lock or even security personnel. Modern examples include: 
+                                            Keypad lock systems, Keycard lock systems, RFID (Radio frequency identification) lock systems or Biometric lock systems. They all perform the same function; keep 
+                                            unauthorised individuals out.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading8">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse8" aria-expanded="false" aria-controls="contentCollapse8">
+                                        <h1>Encryption</h1>
+                                      </button>
+                                    </h1>
+                                    <div id="contentCollapse8" class="accordion-collapse collapse" aria-labelledby="contentHeading8" data-bs-parent="#lessonContentAccordion2">
+                                      <div class="accordion-body">
+                                        <p class="tab">This is a key component of modern day computer security and has its roots as far back as the ancient Romans. The basic function of Encryption is the encoding of 
+                                            information of any data type into a form that is unreadable and useless without a matching decryption key.</p>
+                                        <p class="tab">Data we send out across the internet is encrypted using HyperText Transfer Protocol Secure (HTTPS) most, but not all of the time. Extreme care should be taken 
+                                            when accessing sites without a valid HTTPS certificate to not leak any sensitive data. Good practice would be to avoid such sites completely as they’re often Phishing or 
+                                            Spoof websites.</p>
+                                        <p class="tab">Another layer of protection available while using the Internet can be achieved through the use of a VPN. A Virtual Private Network works by completely 
+                                            encrypting your Internet traffic and sending it to a central server before rerouting it to its intended destination. This is the only real way to ensure that your 
+                                            connection is completely secure. So much so that not even your Internet Service Provider can read your traffic.</p>
+                                        <p class="tab">Encryption can also be utilised on a local level. Encrypting local data can be useful when sensitive information needs to be stored on portable storage media.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading9">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse9" aria-expanded="false" aria-controls="contentCollapse9">
+                                        <h1>Password Managers</h1>
+                                      </button>
+                                    </h1>
+                                    <div id="contentCollapse9" class="accordion-collapse collapse" aria-labelledby="contentHeading9" data-bs-parent="#lessonContentAccordion2">
+                                      <div class="accordion-body">
+                                        <p class="tab">We’ve all forgotten our password for something at least once. Some of us are also guilty of using a ridiculously simple password to prevent such an 
+                                            occurrence. Password managers solve both of these issues.</p>
+                                        <p class="tab">Their basic function is the generation and storage of passwords. Any decent password manager will generate a high entropy password, something like: ^y4g&!u&54ty^$
+                                            As you can see, that's a pretty incomprehensible string of characters. You would have a hard time remembering that let alone guessing it. An attacker would be similarly 
+                                            stumped and it would take a computer an estimated 600,000 years to crack it! That's a pretty long time, probably more effort than it's worth.</p>
+                                        <p class="tab">Password managers generate passwords like these at the press of a button and store them in an encrypted form for retrieval when required. Most browsers come 
+                                            with a Password Manager included but there are also paid alternatives that boast superior encryption.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
 
-                            <a id="subject4"></a>
-                            <button class="accordion"><h3>Access Control</h3></button>
-                            <div class="panel">
-                            <p class="tab">In contrast to the previous examples, access control is more than just a ‘thing.’ There are Hardware and Software applications for access control but it’s more 
-                                of a strategy than an off the shelf product.</p>
-                            <p class="tab">Access control covers everything from the front gate of a premises to a password locked zip file. The core principle is that if somebody or something does not 
-                                need to be somewhere, then don’t allow them to be.</p>
-                            <p class="tab">Access control can be divided into two demographics: Physical Access control snd Digital Access control.</p>
-                            <p class="tab">Let's cover digital control first. The most commonly used type of Digital Access Control (DAC) that you will encounter in a professional environment is 
-                                Role-based Access Control RBAC for short. The core principle of RBAC is that access is delegated on a per-role basis. Sales-people will have access to systems and 
-                                data relevant to their role and nothing else. Whereas a Human-resources employee would have access to a completely different set of systems and data.</p>
-                            <p class="tab">There are many different approaches to DAC and different organisations may find alternate setups more favorable, read more about it here: https://dataprot.net/articles/access-control/</p>
-                            <p class="tab">All Organisations are required by law to comply with the General data-protection Act and considering how data-driven modern business is, a digital Access Control 
-                                strategy is pretty much a requirement.</p>
-                            <p class="tab">Physical Access Control is a much broader yet simple premise. It can be as simple as a door with a lock or even security personnel. Modern examples include: 
-                                Keypad lock systems, Keycard lock systems, RFID (Radio frequency identification) lock systems or Biometric lock systems. They all perform the same function; keep 
-                                unauthorised individuals out.</p>
-                            </div>
-                            
-                            <a id="subject4"></a>
-                            <button class="accordion"><h3>Encryption</h3></button>
-                            <div class="panel">
-                            <p class="tab">This is a key component of modern day computer security and has its roots as far back as the ancient Romans. The basic function of Encryption is the encoding of 
-                                information of any data type into a form that is unreadable and useless without a matching decryption key.</p>
-                            <p class="tab">Data we send out across the internet is encrypted using HyperText Transfer Protocol Secure (HTTPS) most, but not all of the time. Extreme care should be taken 
-                                when accessing sites without a valid HTTPS certificate to not leak any sensitive data. Good practice would be to avoid such sites completely as they’re often Phishing or 
-                                Spoof websites.</p>
-                            <p class="tab">Another layer of protection available while using the Internet can be achieved through the use of a VPN. A Virtual Private Network works by completely 
-                                encrypting your Internet traffic and sending it to a central server before rerouting it to its intended destination. This is the only real way to ensure that your 
-                                connection is completely secure. So much so that not even your Internet Service Provider can read your traffic.</p>
-                            <p class="tab">Encryption can also be utilised on a local level. Encrypting local data can be useful when sensitive information needs to be stored on portable storage media.</p>
-                            </div>
-                            <button class="accordion"><h3>Password Managers</h3></button>
-                            <div class="panel">
-                            <p class="tab">We’ve all forgotten our password for something at least once. Some of us are also guilty of using a ridiculously simple password to prevent such an 
-                                occurrence. Password managers solve both of these issues.</p>
-                            <p class="tab">Their basic function is the generation and storage of passwords. Any decent password manager will generate a high entropy password, something like: ^y4g&!u&54ty^$
-                                As you can see, that's a pretty incomprehensible string of characters. You would have a hard time remembering that let alone guessing it. An attacker would be similarly 
-                                stumped and it would take a computer an estimated 600,000 years to crack it! That's a pretty long time, probably more effort than it's worth.</p>
-                            <p class="tab">Password managers generate passwords like these at the press of a button and store them in an encrypted form for retrieval when required. Most browsers come 
-                                with a Password Manager included but there are also paid alternatives that boast superior encryption.</p>
-                            </div>
+
                             </div>
 
                             
@@ -355,6 +411,7 @@
                     <div class="col">
                     </div>
                 </div>
+                
             </div>
         </main>
         <footer>
@@ -366,6 +423,6 @@
     </body>
     <script src="scripts/quizflip.js"></script>
     <script src="scripts/contentswitch.js"></script>
-    <script src="scripts/accordion.js"></script>
+    <!--<script src="scripts/accordion.js"></script>-->
 
 </html>
