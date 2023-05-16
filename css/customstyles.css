@@ -93,6 +93,12 @@ nav {
 }
 
 .content-container-bottom {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.content-container-page-bottom {
   margin-bottom: 10px;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
