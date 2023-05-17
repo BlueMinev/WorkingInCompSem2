@@ -5,8 +5,7 @@
         <title>BVJN - Security Mechanisms</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/normalize.css" rel="stylesheet">
-		<link href="css/customstyles.css" rel="stylesheet">
-        <link href="css/accordion.css" rel="stylesheet">
+		    <link href="css/customstyles.css" rel="stylesheet">
         <link href="css/bootstrap-grid.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -37,16 +36,23 @@
             <a id="top"></a>
             <!--Content begins here-->
             <div id="wrapper" class="container-fluid">
-
+                <div id="intro" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                    <div id="intro-aside-l" class="col">
+                    </div>
+                    <div id="intro-content" class="col-lg-8 content-container content-container-top pt-2 ps-2 ps-lg-3 pe-2 pb-2">
+                    </div>
+                    <div id="intro-aside-r" class="col">
+                    </div>
+                </div>
                 <!--First row of Divs for introduction to page-->
                 <div id="intro" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
                     <div id="intro-aside-l" class="col">
                     </div>
                     <div id="intro-content" class="col-lg-8 content-container">
                         <div id="intro-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
-                        <h1 class="text-center">Heading</h1>
-                        <p>Intro be here.</p>
-                        <p>Take a good read of the following articles and once you have a good grasp of the topics have a go at our Revision Quiz!</p>
+                        <h1 class="text-center">Privacy and Information Systems</h1>
+                        <p></p>
+                        <p class="tab">Take a good read of the following articles and once you have a good grasp of the topics have a go at our Revision Quiz!</p>
                         </div>
                     </div>
                     <div id="intro-aside-r" class="col">
@@ -59,11 +65,11 @@
                     </div>
                     <div id="cv-b1" class="col-lg-8 navigation-container">
                         <div class="toggle-container">
-                            <label for="theme" class="theme">
-                              <span class="theme--text">Learn</span>
-                              <input type="checkbox" id="theme" onchange="switchview()">
-                              <span class="theme--btn"></span>
-                              <span class="theme--text">Revise</span>
+                            <label for="switch" class="switch">
+                              <span class="switch--text">Learn</span>
+                              <input type="checkbox" id="switch" onchange="switchview()">
+                              <span class="switch--btn"></span>
+                              <span class="switch--text">Revise</span>
                             </label>
                           </div>
                     </div>
@@ -80,78 +86,154 @@
                             <div id="main-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
                             <a id="subject1"></a>
                             <h2 class="tab sh marbot">Understanding of the issues around privacy in business information systems.</h2>
+                            <!--Accordion begins-->
+                            <div class="accordion accordion-flush" id="lessonContentAccordion">
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse1" aria-expanded="false" aria-controls="contentCollapse1">
+                                      <h1 class="text-center">Insider Threats</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse1" class="accordion-collapse collapse" aria-labelledby="contentHeading1" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body"><p class="tab">Insider threats are when someone who works for a company, like an employee or contractor, purposely or accidentally causes a security problem. For example, they might steal secret information to sell to a rival company or they might accidentally share important information because they didn't follow security rules. To prevent insider threats, companies can train employees better, check their backgrounds, and limit their access to sensitive information.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse2" aria-expanded="false" aria-controls="contentCollapse2">
+                                      <h1>Social Engineering</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse2" class="accordion-collapse collapse" aria-labelledby="contentHeading2" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body"><p class="tab">Social engineering is a sneaky trick that hackers use to get people to give away secret information. They might pretend to be someone important from a company and ask for login details over the phone. To stop social engineering, companies can teach their employees to be more careful and aware. Workers should always double-check who they're talking to and be careful when someone asks for secret information without a good reason.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse3" aria-expanded="false" aria-controls="contentCollapse3">
+                                      <h1>Data Breach</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse3" class="accordion-collapse collapse" aria-labelledby="contentHeading3" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body">
+                                        <p class="tab">A data breach happens when someone gets hold of important information without permission, like stealing it or sharing it without permission. This can happen because of weak passwords, sneaky phishing tricks, or problems with software or hardware. To stop data breaches, companies need to use strong security tools like encryption and access controls, and follow rules for keeping information safe.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading4">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse4" aria-expanded="false" aria-controls="contentCollapse4">
+                                        <h1>Malware and Viruses</h1>
+                                      </button>
+                                    </h1>
+                                    <div id="contentCollapse4" class="accordion-collapse collapse" aria-labelledby="contentHeading4" data-bs-parent="#lessonContentAccordion">
+                                      <div class="accordion-body">
+                                        <p class="tab">Malware and viruses are bad programs that can infect a company's computer systems and cause problems. They can steal important information or delete it, and they can also stop systems from working properly.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse5" aria-expanded="flase" aria-controls="contentCollapse5">
+                                            <h1>Compliance</h1>
+                                        </button>
+                                    </h1>
+                                    <div id="contentCollapse5" class="accordion-collapse collapse" aria-labelledby="contentHeading5" data-bs-parent="#lessonContentAccordion">
+                                        <div class="accordion-body">
+                                            <p class="tab">Businesses need to follow rules about how they protect people's private information. These rules are different in different places, like the GDPR in Europe or HIPAA in the US. If companies don't follow these rules, they can get fined or sued. So it's important for companies to know and follow the rules that apply to them.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse6" aria-expanded="flase" aria-controls="contentCollapse6">
+                                            <h1>Third Party Risks</h1>
+                                        </button>
+                                    </h1>
+                                    <div id="contentCollapse6" class="accordion-collapse collapse" aria-labelledby="contentHeading6" data-bs-parent="#lessonContentAccordion">
+                                        <div class="accordion-body">
+                                            <p class="tab">Sometimes, companies work with outside vendors or contractors who also have access to important information. These outside companies might not have the same security standards as the main company, and their workers could also cause problems for privacy. To be safe, businesses should check out these outside companies and make sure they have good security rules in place to protect information.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                                 
-                                <button class="accordion"><h3>Insider threats</h3></button>
-                                <div class="panel">
-                                <p class="tab">Insider threats are when someone who works for a company, like an employee or contractor, purposely or accidentally causes a security problem. For example, they might steal secret information to sell to a rival company or they might accidentally share important information because they didn't follow security rules. To prevent insider threats, companies can train employees better, check their backgrounds, and limit their access to sensitive information.</p> 
-                                </div>
-
-                                <button class="accordion"><h3>Social engineering</h3></button>
-                                <div class="panel">
-                                <p class="tab">Social engineering is a sneaky trick that hackers use to get people to give away secret information. They might pretend to be someone important from a company and ask for login details over the phone. To stop social engineering, companies can teach their employees to be more careful and aware. Workers should always double-check who they're talking to and be careful when someone asks for secret information without a good reason.</p>
-                                </div>
-
-                                <button class="accordion"><h3>Data breach</h3></button>
-                                <div class="panel">
-                                <p class="tab">A data breach happens when someone gets hold of important information without permission, like stealing it or sharing it without permission. This can happen because of weak passwords, sneaky phishing tricks, or problems with software or hardware. To stop data breaches, companies need to use strong security tools like encryption and access controls, and follow rules for keeping information safe.</p>
-                                </div>
-
-                                <button class="accordion"><h3>Malware abd viruses</h3></button>
-                                <div class="panel">
-                                <p class="tab">Malware and viruses are bad programs that can infect a company's computer systems and cause problems. They can steal important information or delete it, and they can also stop systems from working properly.</p>
-                                </div>
-
-                                <button class="accordion"><h3>Compliance</h3></button>
-                                <div class="panel">
-                                <p class="tab">Businesses need to follow rules about how they protect people's private information. These rules are different in different places, like the GDPR in Europe or HIPAA in the US. If companies don't follow these rules, they can get fined or sued. So it's important for companies to know and follow the rules that apply to them.</p>
-                                </div>
-
-                                <button class="accordion"><h3>Third party risks</h3></button>
-                                <div class="panel">
-                                <p class="tab">Sometimes, companies work with outside vendors or contractors who also have access to important information. These outside companies might not have the same security standards as the main company, and their workers could also cause problems for privacy. To be safe, businesses should check out these outside companies and make sure they have good security rules in place to protect information.</p>
-                                </div>
 
 
 
                             <h2 class="tab sh marbot">Ways to mitigate privacy threats.</h2>
                             <p class="tab">In order to stop privacy threats in business information systems, security controls must be implemented. Here are is a list of some common security controls.</p>
-
+                            <div class="accordion accordion-flush" id="lessonContentAccordion2">
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse7" aria-expanded="false" aria-controls="contentCollapse7">
+                                      <h1 class="text-center">Access control</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse8" class="accordion-collapse collapse" aria-labelledby="contentHeading8" data-bs-parent="#lessonContentAccordion2">
+                                    <div class="accordion-body"><p class="tab">Access controls are like locks on doors that prevent unauthorized people from getting access to sensitive information in a business information system. These controls can be things like using passwords, fingerprint scans, or requiring two forms of identification to make sure only authorized people can get in.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse9" aria-expanded="false" aria-controls="contentCollapse9">
+                                      <h1>Encryption</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse9" class="accordion-collapse collapse" aria-labelledby="contentHeading9" data-bs-parent="#lessonContentAccordion2">
+                                    <div class="accordion-body"><p class="tab">Encryption is a way to protect important information in a business information system. It changes the data into a code that only people with a special key can decode and understand. Encryption can be used to protect information that is being sent from one place to another or information that is saved on devices.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse10" aria-expanded="false" aria-controls="contentCollapse10">
+                                      <h1>Firewalls</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse10" class="accordion-collapse collapse" aria-labelledby="contentHeading10" data-bs-parent="#lessonContentAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="tab">Firewalls are like security guards. They make sure only the right things can get in and out, and keep out any unwanted software. Firewalls can be a physical device or a program, and they're set up to block certain types of data from getting through. They're like a filter that only lets the good stuff in, and keeps the bad stuff out.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading11">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse11" aria-expanded="false" aria-controls="contentCollapse11">
+                                        <h1>Intrusion and detection prevention systems</h1>
+                                      </button>
+                                    </h1>
+                                    <div id="contentCollapse11" class="accordion-collapse collapse" aria-labelledby="contentHeading11" data-bs-parent="#lessonContentAccordion2">
+                                      <div class="accordion-body">
+                                        <p class="tab">Intrusion Detection and Prevention Systems (IDPS) monitor computer networks. They watch out for suspicious guys trying to do bad things and stop them from doing any damage. If they see anything suspicious, they can let the network administrators know and even stop the bad guys automatically. It's like having a superhero protect your computer network!</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading12">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse12" aria-expanded="flase" aria-controls="contentCollapse12">
+                                            <h1>Physical Security</h1>
+                                        </button>
+                                    </h1>
+                                    <div id="contentCollapse12" class="accordion-collapse collapse" aria-labelledby="contentHeading12" data-bs-parent="#lessonContentAccordion2">
+                                        <div class="accordion-body">
+                                            <p class="tab">Physical security can be used to protect physical devices, such as servers and laptops, from theft and unauthorized access. Physical security controls can include security cameras, access control systems, and security guards.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading13">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse13" aria-expanded="flase" aria-controls="contentCollapse13">
+                                            <h1>Employee Training</h1>
+                                        </button>
+                                    </h1>
+                                    <div id="contentCollapse13" class="accordion-collapse collapse" aria-labelledby="contentHeading6" data-bs-parent="#lessonContentAccordion2">
+                                        <div class="accordion-body">
+                                            <p class="tab">Employee training is essential to ensure that employees understand the importance of privacy and security and are aware of the risks of cyber threats. Employee training can include topics such as password management, phishing awareness, and data handling.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                             <a id="subject2"></a>
 
-                            <button class="accordion"><h3>Access controls</h3></button>
-                            <div class="panel">
-                            <p class="tab">Access controls are like locks on doors that prevent unauthorized people from getting access to sensitive information in a business information system. These controls can be things like using passwords, fingerprint scans, or requiring two forms of identification to make sure only authorized people can get in.</p>
-                            </div>
-                                
-                            <a id="subject3"></a>
                             
-                            <button class="accordion"><h3>Encryption</h3></button>
-                            <div class="panel">
-                            <p class="tab">Encryption is a way to protect important information in a business information system. It changes the data into a code that only people with a special key can decode and understand. Encryption can be used to protect information that is being sent from one place to another or information that is saved on devices.</p>
-                            </div>
-
-                            <a id="subject4"></a>
-                            <button class="accordion"><h3>Firewalls</h3></button>
-                            <div class="panel">
-                            <p class="tab">Firewalls are like security guards. They make sure only the right things can get in and out, and keep out any unwanted software. Firewalls can be a physical device or a program, and they're set up to block certain types of data from getting through. They're like a filter that only lets the good stuff in, and keeps the bad stuff out.</p>
-                            </div>
-                            
-                            <a id="subject4"></a>
-                            <button class="accordion"><h3>Intrusion and detection prevention systems</h3></button>
-                            <div class="panel">
-                            <p class="tab">Intrusion Detection and Prevention Systems (IDPS) monitor computer networks. They watch out for suspicious guys trying to do bad things and stop them from doing any damage. If they see anything suspicious, they can let the network administrators know and even stop the bad guys automatically. It's like having a superhero protect your computer network!</p>
-                            </div>
-
-                            <a id="subject4"></a>
-                            <button class="accordion"><h3>Physical security</h3></button>
-                            <div class="panel">
-                            <p class="tab">Physical security can be used to protect physical devices, such as servers and laptops, from theft and unauthorized access. Physical security controls can include security cameras, access control systems, and security guards.</p>
-                            </div>
-
-                            <button class="accordion"><h3>Employee training</h3></button>
-                            <div class="panel">
-                            <p class="tab">Employee training is essential to ensure that employees understand the importance of privacy and security and are aware of the risks of cyber threats. Employee training can include topics such as password management, phishing awareness, and data handling.</p>
-                            </div>
                             </div>
 
                             
@@ -164,7 +246,7 @@
                     <div id="revision-aside-l" class="col">
                     </div>
                     <div id="rcc-1" class="col-lg-4 card-content-container-l">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -174,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -184,7 +266,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -196,7 +278,7 @@
                         </div>
                     </div>
                     <div id="rcc-2" class="col-lg-4 card-content-container-r">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -206,7 +288,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -216,7 +298,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -235,7 +317,7 @@
                     <div id="revision-aside-l" class="col">
                     </div>
                     <div id="rcc-3" class="col-lg-4 card-content-container-l">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -247,7 +329,7 @@
                         </div>
                     </div>
                     <div id="rcc-4" class="col-lg-4 card-content-container-r">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -266,7 +348,7 @@
                     <div id="revision-aside-l" class="col">
                     </div>
                     <div id="rcc-5" class="col-lg-4 card-content-container-l">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -278,7 +360,7 @@
                         </div>
                     </div>
                     <div id="rcc-6" class="col-lg-4 card-content-container-r">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
 
@@ -298,9 +380,13 @@
                 <div id="signature-container" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
                     <div class="col">
                     </div>
-                    <div class="col-lg-8 content-container content-container-bottom">
+                    <div class="col-lg-8 content-container content-container-page-bottom">
                         <div id="signature-content-container" class="pt-3 pb-3 ps-2 ps-lg-3 pe-2 pb-2">
                             <small>&copy; 2023, Nick Faulkner, Blue Minev, Judy El-Kalza, Vincent Doherty</small>
+                            <div class="float-end">
+                              <small>Built with Bootstrap</small>
+                              <img src="images/Bootstrap_logo.png" alt="Bootstrap 5 Logo" class="mx-1" height="20">
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -317,6 +403,4 @@
     </body>
     <script src="scripts/quizflip.js"></script>
     <script src="scripts/contentswitch.js"></script>
-    <script src="scripts/accordion.js"></script>
-
 </html>
