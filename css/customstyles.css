@@ -71,7 +71,7 @@ nav {
 
 .card-content-container-l  {
   border-width: 2px;
-  border-style: none none none solid;
+  border-style: solid solid solid solid;
   border-color: black;
   background-color: rgba(11, 61, 112, .5) ;
   /*filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));*/
@@ -79,7 +79,7 @@ nav {
 
 .card-content-container-r  {
   border-width: 2px;
-  border-style: none solid none none;
+  border-style: solid solid solid solid;
   border-color: black;
   background-color: rgba(11, 61, 112, .5) ;
   /*filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));*/
