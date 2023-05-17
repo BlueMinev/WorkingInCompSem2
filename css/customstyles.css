@@ -7,7 +7,7 @@
     --red: 3, 61%, 58%;
     --purple: 293, 29%, 50%;
     --blue: 202, 68%, 60%;
-    --dark: 0, 0%, 18%;
+    --btndrk: 0, 0%, 18%;
     --light: 0, 0%, 95%;
 }
 
@@ -71,7 +71,7 @@ nav {
 
 .card-content-container-l  {
   border-width: 2px;
-  border-style: none none none solid;
+  border-style: solid solid solid solid;
   border-color: black;
   background-color: rgba(11, 61, 112, .5) ;
   /*filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));*/
@@ -79,7 +79,7 @@ nav {
 
 .card-content-container-r  {
   border-width: 2px;
-  border-style: none solid none none;
+  border-style: solid solid solid solid;
   border-color: black;
   background-color: rgba(11, 61, 112, .5) ;
   /*filter: drop-shadow(0 0 0.75rem rgb(155, 149, 150));*/
@@ -87,10 +87,23 @@ nav {
 
 .content-container-top  {
   border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .content-container-bottom {
   border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.content-container-page-bottom {
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .navigation-container   {
@@ -135,17 +148,6 @@ h2:after{
     margin-top: 8px;
   }
 
-h3:after {
-    content: '';
-    display: block;
-    height: 8px;
-    background: var(--accent-color);
-    max-width: 55px;
-    transform: skewX(-21deg) translateY(-13px) translateX(-12px);
-    border-radius: 3px;
-    margin-top: 16px;
-}
-
 .nodec {
     list-style: none;
 }
@@ -166,7 +168,7 @@ h3:after {
     padding: 0;
   }
 
-.theme  {
+.switch  {
     position: relative;
     display: grid;
     place-items: center;
@@ -176,7 +178,7 @@ h3:after {
     text-transform: uppercase;
     letter-spacing: .04em;
 }
-    .theme input    {
+    .switch input    {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -186,18 +188,18 @@ h3:after {
     -webkit-appearance: none;
 }
 
-.theme--text    {
+.switch--text    {
     user-select: none;
 }
-  .theme--btn {
+  .switch--btn {
     position: relative;
     pointer-events: none;
     width: 5.5rem;
     height: 3rem;
     border-radius: 100vw;
-    box-shadow: inset 0px -1px 5px hsl(var(--dark), .2);
+    box-shadow: inset 0px -1px 5px hsl(var(--btndrk), .2);
   }
-  .theme--btn::after {
+  .switch--btn::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -206,17 +208,17 @@ h3:after {
     transition: transform .2s cubic-bezier(0.96, -0.11, 0, 1.12);
     width: 2.5rem;
     height: 2.5rem;
-    background-color: hsl(var(--dark));
+    background-color: hsl(var(--btndrk));
     border-radius: 100vw;
-    box-shadow: 0px 1px 2px hsl(var(--dark), .6);
+    box-shadow: 0px 1px 2px hsl(var(--btndrk), .6);
   }
-  .theme input:checked ~ .theme--btn::after {
+  .switch input:checked ~ .switch--btn::after {
     transform: translate3d(2.5rem, -50%, 0);
   }
 
   /* Cards */
 
-  .container {
+  .card-container {
     display: flex;
     border-radius: 3px;
     justify-content: center;
@@ -228,18 +230,18 @@ h3:after {
 
 .card {
 
-    height: 300px;
-    width: 200px;
-    position: relative;
-    background: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    transition: transform 1500ms;
-    transform-style: preserve-3d;
-    box-shadow: 5px 5px 3px lightblue;
+  height: 500px;
+  width: 300px;
+  position: relative;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  box-shadow: 5px 5px 3px lightblue;
 
     
 }
@@ -251,28 +253,32 @@ h3:after {
 
 
 .front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-color: rgba(11, 61, 112, 1);
-    backface-visibility: hidden;
-    border-radius: 3px;
-    color: #000;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(12, 75, 139, 0.5) ;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+}
+
+.front h3 {
+color: #fff;
 }
 
 .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    backface-visibility: hidden;
-    background: purple;
-    color: white;
-    text-align: center;
-    border-radius: 3px;
-    transform: rotateY(180deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  backface-visibility: hidden;
+  background-color: rgba(12, 75, 139, 0.5) ;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  transform: rotateY(180deg);
 }
 
 .flipCard {

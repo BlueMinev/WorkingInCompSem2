@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/normalize.css" rel="stylesheet">
 		<link href="css/customstyles.css" rel="stylesheet">
-        <link href="css/accordion.css" rel="stylesheet">
         <link href="css/bootstrap-grid.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -35,9 +34,17 @@
       </header>
         <main>
             <a id="top"></a>
+            
             <!--Content begins here-->
             <div id="wrapper" class="container-fluid">
-
+                <div id="intro" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
+                    <div id="intro-aside-l" class="col">
+                    </div>
+                    <div id="intro-content" class="col-lg-8 content-container content-container-top pt-2 ps-2 ps-lg-3 pe-2 pb-2">
+                    </div>
+                    <div id="intro-aside-r" class="col">
+                    </div>
+                </div>
                 <!--First row of Divs for introduction to page-->
                 <div id="intro" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
                     <div id="intro-aside-l" class="col">
@@ -45,8 +52,8 @@
                     <div id="intro-content" class="col-lg-8 content-container">
                         <div id="intro-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
                         <h1 class="text-center">Lesson 3 : Techniques in Mitigating Privcay Threats</h1>
-                        <p>Intro be here.</p>
-                        <p>Take a good read of the following articles and once you have a good grasp of the topics have a go at our Revision Quiz!</p>
+                        <p></p>
+                        <p class="tab">Take a good read of the following articles and once you have a good grasp of the topics have a go at our Revision Quiz!</p>
                         </div>
                     </div>
                     <div id="intro-aside-r" class="col">
@@ -59,11 +66,11 @@
                     </div>
                     <div id="cv-b1" class="col-lg-8 navigation-container">
                         <div class="toggle-container">
-                            <label for="theme" class="theme">
-                              <span class="theme--text">Learn</span>
-                              <input type="checkbox" id="theme" onchange="switchview()">
-                              <span class="theme--btn"></span>
-                              <span class="theme--text">Revise</span>
+                            <label for="switch" class="switch">
+                              <span class="switch--text">Learn</span>
+                              <input type="checkbox" id="switch" onchange="switchview()">
+                              <span class="switch--btn"></span>
+                              <span class="switch--text">Revise</span>
                             </label>
                           </div>
                     </div>
@@ -79,217 +86,284 @@
                         <div class="col-lg-8 content-container">
                             <div id="main-content-container" class="pt-5 ps-2 ps-lg-3 pe-2 pb-2">
                             <a id="subject1"></a>
-                            <h2 class="tab sh marbot">Page Title</h2>
+                            <h2 class="tab sh marbot">How To Prevent Privacy Threats</h2>
+                            <div class="accordion accordion-flush" id="lessonContentAccordion">
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse1" aria-expanded="false" aria-controls="contentCollapse1">
+                                      <h1 class="text-center">Passwords</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse1" class="accordion-collapse collapse" aria-labelledby="contentHeading1" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body"><p class="tab">To safeguard your sensitive information from hackers, it is vital that you develop strong passwords. Strong passwords should be challenging for hackers to decipher or guess. They should also be complicated. These are some guidelines for creating secure and reliable passwords: <br> 
+                                        <ul>
+                                            <li>Use a variety of characters: A good password should be made up of a combination of capital and lowercase letters, digits, and symbols like @, $, and #. Predictable  patterns like "password123" or "123456" should be avoided.</li>
+                                            <li>lengthen it: Hackers have a harder time breaking a password that is lengthier. Strive for 12 characters or more minimum.</li>
+                                            <li>Use  a passphrase to protect your identity. A passphrase is a term or phrase that only you can remember. For example, you could change "My favourite colour is blue!" into "Mfcib!21,". </li>
+                                            <li>Avoid using personal information such as your name, date of birth, or address in your password. Hackers can easily get this information.</li>
+                                            <li> Use a password manager:  You can create complicated passwords and store them securely using password managers like LastPass, 1Password, ,Dash Lane and BitWarden.</li>
+                                            </ul>
+                                         There are many advantages to using a password manager. For example,
+                                         <ul>
+                                            <li>it enables you to securely store all your passwords and have unique strong ones for every account. 
+                                            <li>It's compatible with any operating system or device and syncs effortlessly between them all while also offering safety features such as fraud alerting detection after scanning URLs, flagging repeated use of one password on multiple accounts, and notifying in case your password has showed up in a data breach . </li>
+                                        </ul> Although most browsers come equipped with their own managers too; you should get new browser updates regularly alongside keeping any software up to date as vulnerabilities are constantly being found and patched. <br> Saving passwords on shared computers should never be done in a browser, and it is important to make sure everyone has their own account and logs out when they've finished using it.
+                                        <br>  Best practices:
+                                        <ul>
+                                            <li>Turn on two-factor authentication on the password manager account. This means that even if a cybercriminal knows the ‘master’ password, they still won’t be able to access your password manager account.</li>
+                                            <li>Choose a strong ‘master’ password to control access to your password manager account (for example by using three random words). Note that you can’t store this password in the password manager itself, so if you can’t remember it, it's OK for you to write it down on paper, provided you keep it safe and out of sight.</li>
+                                            <li>Install updates for your password manager app as soon as you're prompted.</li>
+                                        </ul></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse2" aria-expanded="false" aria-controls="contentCollapse2">
+                                      <h1>2 Factor Authentication</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse2" class="accordion-collapse collapse" aria-labelledby="contentHeading2" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body"><p class="tab">65% of the population use identical or similar passwords for multiple accounts. This increases the likelihood that a malicious party will be capable of accessing your various accounts. In the unfortunate event of a security breach concerning your email account your personal details such as name, address or phone number could be accessed and leaked online. This could pave way for people with a malicious intent to access confidential data that can further fuel identity theft schemes or phishing scams. Taking advantage of two-factor authentication (2FA) can significantly minimise such security risks associated with breaches occurring across different platforms you utilise.</p>
+                                        <p class="tab">Passwords or PINs are commonly used as the first form of verification. To provide an additional layer of security, unique codes or biometric identifiers like fingerprints and facial recognition technology serve as secondary forms to authenticate individuals. An example is when users input their password to log into their personal account and are then prompted with following up by entering a code delivered via SMS on one occasion or, using an authentication app. </p>
+                                        <p class="tab">Before using an 2FA app, you will need to activate it in the software you want to use 2fa for. The first step is going into the user settings on your profile and adding 2 factor authentication. Certain services may require software like Google Authenticator or Authy for code generation. Upon enabling 2FA successfully, you will be prompted with an exclusive code supplied either by said application itself or through it additionally to existing password prompts required upon logging into that particular account in the future.</p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header" id="contentHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse3" aria-expanded="false" aria-controls="contentCollapse3">
+                                      <h1>How to avoid Social Engineering</h1>
+                                    </button>
+                                  </h1>
+                                  <div id="contentCollapse3" class="accordion-collapse collapse" aria-labelledby="contentHeading3" data-bs-parent="#lessonContentAccordion">
+                                    <div class="accordion-body">
+                                        <p class="tab">Social engineering is a type of scam where people are tricked into disclosing private information. Phishing emails, phone calls, and even in-person contacts are all examples of social engineering attacks. These attacks aim to deceive the target into disclosing private information, like passwords or bank account numbers, or to get them to take a step that could jeopardise a system's or network's security.</p>
+                                        <p class="tab">There are many precautions you can take to avoid social engineering attacks:
+                                            <ul>
+                                            <li>Beware of unexpected requests: Social engineering attacks frequently entail unanticipated requests for data or activities. Be cautious and check the request before acting if someone asks you for sensitive information or to carry out an unusual action.</li>
+                                            <li>Use strong passwords: passwords that are at least 9 characters long and contain a combination of letters, numbers, and symbols are vital to help reduce the impact of falling for social engineering scams. Additionally, creating unique passwords for each account is a good idea.</li>
+                                            <li>Avoid phishing emails: Social engineering attacks using phishing emails are frequent. Always use caution when opening links or downloading attachments from emails sent by unknown senders. If an email seems questionable, get in touch with the sender right away to confirm its legitimacy.</li>
+                                            </ul></p></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading4">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse4" aria-expanded="false" aria-controls="contentCollapse4">
+                                        <h1>How to avoid Phishing scams</h1>
+                                      </button>
+                                    </h1>
+                                    <div id="contentCollapse4" class="accordion-collapse collapse" aria-labelledby="contentHeading4" data-bs-parent="#lessonContentAccordion">
+                                      <div class="accordion-body">
+                                        <p class="tab">Phishing is an online scam used to deceive users into revealing private information like passwords or credit card details. Phishing attacks frequently make use of fake emails or websites that appear to be coming from a reliable source, such a bank or social media site. Social engineering techniques are frequently used in phishing attacks to deceive victims into disclosing private information. <br>For example, an email can say that the victim's bank account has a problem and ask them to click on a link to verify their details. The victim may be sent to a fake website that imitates the bank's website by clicking the link, where they would be prompted to enter their login details and other private data. Attacks carried out through phishing can be incredibly convincing, and victims may not recognise they have been scammed until it is too late. Once the attackers obtain the victim's information, they can use it to carry out criminal acts like financial fraud, and identity theft. <br>There are a few things you can do to safeguard yourself in order to avoid becoming a victim: </p>
+                                        <ul> 
+                                        <li>Be cautious of unwanted messages: phishing scams frequently use them to entice unwary victims. Any communication that appears randomly should be treated with caution, especially if it requests personal information or urges you to click on a link.</li>
+                                        <li>Look up the source: Cybercriminals frequently attempt to pose as reputable businesses in order to deceive customers into giving up personal information. Verify that the email address being sent matches the company's official domain by checking it again. When in doubt, get in touch with the business via phone or via their official website.</li>
+                                        <li>Check your emails for spelling and punctuation flaws: Many phishing emails are poorly written and may have these issues.</li> 
+                                        <li>Avoid clicking links: Links are frequently used in phishing scams to drive people to dangerous websites that can steal their personal information or infect their systems with malware. When in doubt, hover your cursor over a link to reveal its URL. Verify that it corresponds to the organization's official domain.</li>
+                                        <li>Make use of anti-phishing software: This software can recognise and prevent phishing attempts before they can cause damage. Always make sure to keep any software up to date for it to be the most effective.</li>
+                                       </ul></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse5" aria-expanded="flase" aria-controls="contentCollapse5">
+                                            <h1>How to prevent getting Malware</h1>
+                                        </button>
+                                    </h1>
+                                    <div id="contentCollapse5" class="accordion-collapse collapse" aria-labelledby="contentHeading5" data-bs-parent="#lessonContentAccordion">
+                                        <div class="accordion-body">
+                                            <p class="tab">Malware is a type of software that is made be able to damage or access a computer without permission. Malware comes in many different forms. Such as worms, trojan horses, spyware, ransomware and viruses. Email attachments, corrupt software downloads, and rogue websites can all transmit malware. Malware can corrupt files, steal data, and even take over your computer if it is installed.
+                                                <br>There are many ways to prevent getting malware: </p>
+                                                <ul> 
+                                                <li>Use an antivirus: Antivirus programmes can find and get rid of most malware before it affects you. It is important to keep your antivirus up to date so that it can detect as much malware as possible.</li>
+                                                <li>Maintain software updates: Software security flaws are frequently exploited in malware attacks. Updating you Operating system. applications and browsers mean that these security flaws are patched over.</li>
+                                                <li> opening email attachments, exercise caution: Email attachments are a common way for malware to spread. Never open attachments that you weren't anticipating and exercise caution when accessing files from senders you don't know.</li>
+                                                <li> secure passwords; malware can access your passwords by stealing them. Use strong passwords that are at least 9 characters long and contain a combination of letters, numbers, and symbols to avoid this. Additionally, creating unique passwords for each account is a good idea.</li>
+                                                <li>When downloading software, exercise caution: Downloads of malicious software can spread malware. Be careful while downloading free software from untrusted websites and only use sources you can trust.</li>
+                                                <li>Make a data backup: It's crucial to have a backup of your crucial data in case your system does become infected with malware. Don't forget to routinely backup your files to a cloud storage provider or an external hard drive.</li>
+                                                </ul></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse6" aria-expanded="flase" aria-controls="contentCollapse6">
+                                            <h1>Tips for those who want more Privacy online</h1>
+                                        </button>
+                                    </h1>
+                                    <div id="contentCollapse6" class="accordion-collapse collapse" aria-labelledby="contentHeading6" data-bs-parent="#lessonContentAccordion">
+                                        <div class="accordion-body">
+                                            <p class="tab">In the modern day privacy online is becoming a more scarce thing. However there are small changes you can make to ensure you are staying more anonymous online such as: 
+                                                <ul>
+                                                <li>Changing your browser to a more privacy focused on for example, brave ,Firefox or Tor. </li>
+                                                <li>Using privacy focused search engines. A browser and search engine are 2 different things. The search engine is the thing you type your query into and the browser is the app that houses the search engine. Search engines that are more privacy friendly are brave search, duck duck go and start page.</li> 
+                                                <li>Using encrypted emails can add an extra layer of privacy. Common email service providers collect metadata, for example the email subject, the date the email was sent, who sent it and who received it etc. In the past , Gmail has read users emails and used this information of advertising, training AI and letting 3rd party developers have access to the users emails. Email providers that are more secure include: proton mail and tutanota.</li>
+                                                </ul></p>
+                                        </div>
+                                    </div>
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header" id="contentHeading7">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentCollapse7" aria-expanded="false" aria-controls="contentCollapse7">
+                                            <h1>Sources</h1>
+                                        </button>
+                                    </h1>
+                                    <div id="contentCollapse7" class="accordion-collapse collapse" aria-labelledby="contentHeading7" data-bs-parent="#lessonContentAccordion">
+                                        <div class="accordion-body">
+                                            <p class="tab">Passwords: 
+                                                <ul>
+                                                   <li> <a href = "https://www.ncsc.gov.uk/collection/small-business-guide/using-passwords-protect-your-data" > NCSC </a></li>
+                                                   <li> <a href="https://consumer.ftc.gov/articles/password-checklist"> Federal Trade Commission </a></li>
+                                                   <li> <a href="https://us.norton.com/blog/how-to/how-to-choose-a-secure-password">Norton </a></li>
+                                                   <li> <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#memsecret"> National Institute of Standards and Technology (NIST) guidelines on password security</a></li>
+                                                   <li> <a href="https://greymatter.com/content-hub/the-risks-of-not-having-strong-passwords/"> Greymatter</a></li>
+                                               </ul>
+                                               2fa :
+                                               <ul>
+                                                   <li><a href ="https://www.cisa.gov/sites/default/files/publications/MFA-Fact-Sheet-Jan22-508.pdf"> Cybersecurity & Infrastructure Security Agency's Two-Factor Authentication guide </a> </li>
+                                                   <li><a href ="https://www.google.com/landing/2step/"> Google's Two-Factor Authentication guide </a></li>
+                                                   <li><a href ="https://support.microsoft.com/en-us/account-billing/turning-two-step-verification-on-or-off-for-your-microsoft-account-b1a56fc2-caf3-a5a1-f7e3-4309e99987ca">Microsoft's Two-Factor Authentication guide </a></li>
+                                                   <li><a href ="https://support.apple.com/en-us/HT204915"> Apple's Two-factor authentication guide </a></li>
+                                                   <li><a href ="https://www.investopedia.com/terms/t/twofactor-authentication-2fa.asp"> Investopedia’s article on what 2fa is </a></li>
+                                                   <li><a href ="https://authy.com/what-is-2fa/"> Authy </a></li>
+                                                   <li><a href ="https://pages.nist.gov/800-63-3/sp800-63b.html"> National Institute of Standards and Technology (NIST) guidelines on multi-factor authentication: </a></li>
+                                                   <li><a href ="https://www.lastpass.com//-/media/9fe0bf5dc473413b8ab4df3bd8688295.pdf"> Last pass survey</a></li>
+                                                   </ul>
+                                               Phishing scams :
+                                               <ul>
+                                                   <li><a href ="https://consumer.ftc.gov/articles/phishing-dont-take-bait"> The Federal Trade Commission</a></li>
+                                                   <li><a href ="https://www.antiphishing.org/">The Anti-Phishing Working Group</a></li>
+                                                   <li><a href ="https://www.cisa.gov/sites/default/files/2023-02/phishing-infographic-508c.pdf">The United States Computer Emergency Readiness Team</a></li>
+                                                   <li><a href ="https://us.norton.com/internetsecurity-online-scams-how-to-protect-against-phishing-scams.html">Norton</a></li>
+                                                   </ul>
+                                               Malware:
+                                               <ul>
+                                                   <li><a href ="https://www.malwarebytes.com/malware/">  Malwarebytes </a></li>
+                                                   <li><a href ="https://us.norton.com/internetsecurity-malware.html">Norton </a></li>
+                                                   <li><a href ="https://www.kaspersky.com/resource-center/threats/malware"> Kaspersky </a></li>
+                                                   <li><a href ="https://www.microsoft.com/en-us/security/pc-security/malware.aspx">Microsoft Security </a></li>
+                                                   <li><a href ="https://www.cisa.gov/malware-defenses">Cybersecurity and Infrastructure Security Agency </a></li>
+                                                   </ul>
+                                                   Social Engineering: 
+                                                   <ul>
+                                                       <li><a href ="https://sansorg.egnyte.com/dl/Gjdu1oJEla">SANS Institute </a></li>
+                                                       <li><a href ="https://www.securitymagazine.com/articles/93536-avoid-social-engineering-attacks-and-protect-employees">Security Magazine </a></li>
+                                                       </ul>
+           
+                                               Tips for more privacy online: 
+                                                   <ul>
+                                                       <li><a href="https://www.youtube.com/@NaomiBrockwellTV"> NBTV's youtube channel </a></li>
+                                                       </ul></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                                 
-                                <button class="accordion"><h3>Passwords</h3></button>
-                                <div class="panel">
-                                <p class="tab">
-                                    To safeguard your sensitive information from hackers, it is vital that you develop strong passwords. Strong passwords should be challenging for hackers to decipher or guess. They should also be complicated. These are some guidelines for creating secure and reliable passwords: Use a variety of characters: A good password should be made up of a combination of capital and lowercase letters, digits, and symbols like @, $, and #. Predictable  patterns like "password123" or "123456" should be avoided. lengthen it: Hackers have a harder time breaking a password that is lengthier. Strive for 12 characters or more minimum. Use  a passphrase to protect your identity. A passphrase is a term or phrase that only you can remember. For example, you could change "My favourite colour is blue!" into "Mfcib!21,". Avoid using personal information such as your name, date of birth, or address in your password. Hackers can easily get this information. Use a password manager:  You can create complicated passwords and store them securely using password managers like LastPass, 1Password, ,Dash Lane and BitWarden.
-                                    There are many advantages to using a password manager. For example, it enables you to securely store all your passwords and have unique strong ones for every account. It's compatible with any operating system or device and syncs effortlessly between them all while also offering safety features such as fraud alerting detection after scanning URLs, flagging repeated use of one password on multiple accounts, and notifying in case your password has showed up in a data breach . Although most browsers come equipped with their own managers too; you should  get new browser updates regularly alongside keeping any software up to date as vulnerabilities are constantly being found and patched. Saving passwords on shared computers should never be done in a browser, and it is important to make sure everyone has their own account and logs out when they've finished using it. Best practices: Turn on two-factor authentication on the password manager account. This means that even if a cybercriminal knows the ‘master’ password, they still won’t be able to access your password manager account. Choose a strong ‘master’ password to control access to your password manager account (for example by using three random words). Note that you can’t store this password in the password manager itself, so if you can’t remember it, it's OK for you to write it down on paper, provided you keep it safe and out of sight. Install updates for your password manager app as soon as you're prompted.
-                                    </p> 
-                                </div>
-
-                                <button class="accordion"><h3>2 Factor Authentication</h3></button>
-                                <div class="panel">
-                                <p class="tab">65% of the population use identical or similar passwords for multiple accounts. This increases the likelihood that a malicious party will be capable of accessing your various accounts. In the unfortunate event of a security breach concerning your email account your  personal details such as name, address or phone number could be accessed and leaked online. This could pave way for people with a malicious intent to access confidential data that can further fuel identity theft schemes or phishing scams. Taking advantage of two-factor authentication (2FA) can significantly minimise such security risks associated with breaches occurring across different platforms you utilise.
-                                    Passwords or PINs are commonly used as the first form of verification. To provide an additional layer of security, unique codes or biometric identifiers like fingerprints and facial recognition technology serve as secondary forms to authenticate individuals. An example is when users input their password to log into their personal account and are then prompted with following up by entering a code delivered via SMS on one occasion or, using an authentication app.
-                                    Before using an 2FA app, you will need to activate it in the software you want to use 2fa for. The first step is going into the user settings on your profile and adding 2 factor authentication. Certain services may require software like Google Authenticator or Authy for code generation. Upon enabling 2FA successfully, you will be prompted with an exclusive code supplied either by said application itself or through it additionally to existing password prompts required upon logging into that particular account from thereon outwards.
-                                    </p>
-                                </div>
-
-                                <button class="accordion"><h3>How to Avoid Phishing Scams</h3></button>
-                                <div class="panel">
-                                <p class="tab">Phishing is an online scam used to deceive users into revealing private information like passwords or credit card details. Phishing attacks frequently make use of fake emails or websites that appear to be coming from a reliable source, such a bank or social media site. Social engineering techniques are frequently used in phishing attacks to deceive victims into disclosing private information. As an illustration, an email can allege that the victim's bank account has a problem and ask them to click on a link to verify their details. The victim may be sent to a fake website that imitates the bank's website by clicking the link, where they would be prompted to enter their login details and other private data. Attacks carried out through phishing can be incredibly convincing, and victims may not recognise they have been scammed until it is too late. Once the attackers obtain the victim's information, they can use it to carry out criminal acts like financial fraud, and identity theft. There are a few things you can do to safeguard yourself in order to avoid becoming a victim:
-                                    Be cautious of unwanted messages: phishing scams frequently use them to entice unwary victims. Any communication that appears randomly should be treated with caution, especially if it requests personal information or urges you to click on a link.
-                                    Look up the source: Cybercriminals frequently attempt to pose as reputable businesses in order to deceive customers into giving up personal information. Verify that the email address being sent matches the company's official domain by checking it again. When in doubt, get in touch with the business via phone or via their official website.
-                                    Check your emails for spelling and punctuation flaws: Many phishing emails are poorly written and may have these issues. 
-                                    Avoid clicking links: Links are frequently used in phishing scams to drive people to dangerous websites that can steal their personal information or infect their systems with malware. When in doubt, hover your cursor over a link to reveal its URL. Verify that it corresponds to the organization's official domain.
-                                    Make use of anti-phishing software: This software can recognise and prevent phishing attempts before they can cause damage. Always make sure to keep any software up to date for it to be the most effective.
-                                    </p>
-                                </div>
-
-                                <button class="accordion"><h3>How to Prevent Getting Malware</h3></button>
-                                <div class="panel">
-                                <p class="tab">Malware is a type of software that is made be able to damage or access a computer without permission. Malware comes in many different forms. Such as worms, trojan horses, spyware, ransomware and viruses. Email attachments, corrupt software downloads, and rogue websites can all transmit malware. Malware can corrupt files, steal data, and even take over your computer if it is installed.
-                                    There are many ways to prevent getting malware:
-                                    Use an antivirus: Antivirus programmes can find and get rid of most malware before it affects you. It is important to keep your antivirus up to date so that it can detect as much malware as possible.
-                                    Maintain software updates: Software security flaws are frequently exploited in malware attacks. Updating you Operating system. applications and browsers mean that these security flaws are patched over.
-                                    When opening email attachments, exercise caution: Email attachments are a common way for malware to spread. Never open attachments that you weren't anticipating and exercise caution when accessing files from senders you don't know.
-                                    Use secure passwords; malware can access your passwords by stealing them. Use strong passwords that are at least 9 characters long and contain a combination of letters, numbers, and symbols to avoid this. Additionally, creating unique passwords for each account is a good idea.
-                                    When downloading software, exercise caution: Downloads of malicious software can spread malware. Be careful while downloading free software from untrusted websites and only use sources you can trust.
-                                    Make a data backup: It's crucial to have a backup of your crucial data in case your system does become infected with malware. Don't forget to routinely backup your files to a cloud storage provider or an external hard drive.
-                                    </p>
-                                </div>
-
-                                <button class="accordion"><h3>How to avoid social engineering </h3></button>
-                                <div class="panel">
-                                <p class="tab">Social engineering is a type of scam where people are tricked into disclosing private information. Phishing emails, phone calls, and even in-person contacts are all examples of social engineering attacks. These attacks aim to deceive the target into disclosing private information, like passwords or bank account numbers, or to get them to take a step that could jeopardise a system's or network's security.
-                                    There are many precautions you can take to avoid social engineering attacks:
-                                    Beware of unexpected requests: Social engineering attacks frequently entail unanticipated requests for data or activities. Be cautious and check the request before acting if someone asks you for sensitive information or to carry out an unusual action.
-                                    Use strong passwords: passwords that are at least 9 characters long and contain a combination of letters, numbers, and symbols are vital to help reduce the impact of falling for social engineering scams. Additionally, creating unique passwords for each account is a good idea.
-                                    Avoid phishing emails: Social engineering attacks using phishing emails are frequent. Always use caution when opening links or downloading attachments from emails sent by unknown senders. If an email seems questionable, get in touch with the sender right away to confirm its legitimacy.
-                                    </p>
-                                </div>
-                                
-                                <button class="accordion"><h3>Tips for those who want more privacy online</h3></button>
-                                <div class="panel">
-                                <p class="tab">
-                                    In the modern day privacy online is becoming a more scarce thing. However there are small changes you can make to ensure you are staying more anonymous online such as: 
-                                    Changing your browser to a more privacy focused on for example, brave ,Firefox or Tor. 
-                                    Using privacy focused search engines. A browser and search engine are 2 different things. The search engine is the thing you type your query into and the browser is the app that houses the search engine. Search engines that are more privacy friendly are brave search, duck duck go and start page. 
-                                    Using encrypted emails can add an extra layer of privacy. Common email service providers collect metadata, for example the email subject, the date the email was sent, who sent it and who received it etc. In the past , Gmail has read users emails and used this information of advertising, training AI and letting 3rd party developers have access to the users emails. Email providers that are more secure include: proton mail and tutanota
-                                    </p>
-                                </div>
 
 
                             
-                    </div>
                     </div>
                     <div class="col">
                     </div>
                 </div>
 
+
                 <div id="revision-content-container" class="r-c-c row ps-2 ps-lg-3 pe-2 pe-lg-5">
                     <div id="revision-aside-l" class="col">
                     </div>
                     <div id="rcc-1" class="col-lg-4 card-content-container-l">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
-
+                                    What are 3 things you can do to make a secure password? 
                                 </div>
                                 <div class="back">
-
+                                    <ul>
+                                        <li>Use a variety of characters</li>
+                                        <li>Lengthen it </li>
+                                        <li>Avoid using personal information</li>
+                                        <li> Use a password manager</li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
-
+                                    What are 3 other ways that you can use verification in 2fa?
                                 </div>
                                 <div class="back">
-
+                                    Unique codes, biometric identifiers like fingerprints and facial recognition, entering a code delivered via SMS or, using an authentication app. 
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
-
+                                    What are 4 ways to prevent phishing scams?
                                 </div>
                                 <div class="back">
-
+                                    <ul> 
+                                        <li>Be cautious of unwanted messages</li>
+                                        <li>Look up the source</li>
+                                        <li>Check your emails for spelling and punctuation flaws</li> 
+                                        <li>Avoid clicking links</li>
+                                        <li>Make use of anti-phishing software</li>
+                                       </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="rcc-2" class="col-lg-4 card-content-container-r">
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
-
+                                    How can you prevent getting malware?
                                 </div>
                                 <div class="back">
-
+                                    <ul> 
+                                        <li>Use an antivirus</li>
+                                        <li>Be careful when opening emails attachments or downloading software</li>
+                                        <li>Have secure passwords</li>
+                                        <li>Make a data backup</li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <div class="front">
-
+                                    How can you avoid social engineering attacks?
                                 </div>
                                 <div class="back">
-
+                                    <ul>
+                                        <li>Beware of unexpected requests</li>
+                                        <li>Use strong passwords</li>
+                                        <li>Avoid phishing emails</li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="card">
-                                <div class="front">
-
-                                </div>
-                                <div class="back">
-
-                                </div>
-                            </div>
                         </div>
-                    </div>
+                    
                     <div id="revision-aside-r" class="col">
                     </div>
-                </div>
-
-                <div id="revision-content-container" class="row ps-2 ps-lg-3 pe-2 pe-lg-5 r-c-c">
-                    <div id="revision-aside-l" class="col">
                     </div>
-                    <div id="rcc-3" class="col-lg-4 card-content-container-l">
-                        <div class="container">
-                            <div class="card">
-                                <div class="front">
-
-                                </div>
-                                <div class="back">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="rcc-4" class="col-lg-4 card-content-container-r">
-                        <div class="container">
-                            <div class="card">
-                                <div class="front">
-
-                                </div>
-                                <div class="back">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="revision-aside-r" class="col">
-                    </div>
-                </div>
-
-                <div id="revision-content-container" class="row ps-2 ps-lg-3 pe-2 pe-lg-5 r-c-c">
-                    <div id="revision-aside-l" class="col">
-                    </div>
-                    <div id="rcc-5" class="col-lg-4 card-content-container-l">
-                        <div class="container">
-                            <div class="card">
-                                <div class="front">
-
-                                </div>
-                                <div class="back">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="rcc-6" class="col-lg-4 card-content-container-r">
-                        <div class="container">
-                            <div class="card">
-                                <div class="front">
-
-                                </div>
-                                <div class="back">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="revision-aside-r" class="col">
-                    </div>
-                </div>
 
 
             
                 <div id="signature-container" class="row ps-2 ps-lg-3 pe-2 pe-lg-5">
                     <div class="col">
                     </div>
-                    <div class="col-lg-8 content-container content-container-bottom">
+                    <div class="col-lg-8 content-container content-container-page-bottom">
                         <div id="signature-content-container" class="pt-3 pb-3 ps-2 ps-lg-3 pe-2 pb-2">
                             <small>&copy; 2023, Nick Faulkner, Blue Minev, Judy El-Kalza, Vincent Doherty</small>
+                            <div class="float-end">
+                                <small>Built with Bootstrap</small>
+                                <img src="images/Bootstrap_logo.png" alt="Bootstrap 5 Logo" class="mx-1" height="20">
+                              </div>
                         </div>
                     </div>
                     <div class="col">
@@ -306,6 +380,6 @@
     </body>
     <script src="scripts/quizflip.js"></script>
     <script src="scripts/contentswitch.js"></script>
-    <script src="scripts/accordion.js"></script>
+
 
 </html>
